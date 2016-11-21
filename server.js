@@ -108,9 +108,8 @@ slapp.message('attachment', ['mention', 'direct_message'], (msg) => {
 // Catch-all for any other responses not handled above
 slapp.message('.*', ['direct_mention', 'direct_message'], (msg) => {
   // respond only 40% of the time
-  if (Math.random() < 0.4) {
     msg.say([':wave:', ':pray:', ':raised_hands:'])
-  }
+  
 })
 
 // attach Slapp to express server
